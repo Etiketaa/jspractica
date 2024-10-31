@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="titulo"></h1>
+    <h2 id="edad"></h2>
+    <p id="mensaje"></p>
+    <script>
+        var persona = {
+    nombre : 'Juan',
+    edad: 30,
+    ciudad: 'Bahia Blanca',
+    saludar: function(){
+        console.log('Hola, mi nombre es'  + this.name);
+    }
+}
+
+let parrafo = document.getElementById('titulo');
+let parrafo2 = document.getElementById('edad');
+let parrafo3 = document.getElementById('mensaje');
+
+parrafo.innerHTML= persona.nombre;
+parrafo2.innerHTML = persona.edad;
+parrafo3.innerHTML = persona.saludar();
+
+    </script>
+</body>
+</html>
